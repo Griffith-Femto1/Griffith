@@ -41,7 +41,7 @@ function sendMessage(event) {
 }
 
 function loadMessages() {
-    fetch('/messages')
+    fetch('localhost:6969/messages')
         .then(response => response.json())
         .then(messages => {
             const messagesDiv = document.getElementById("messages");
